@@ -1,4 +1,4 @@
 # LeetCode problems solving
 
-Authors solutions of algorithmic problems powered by [LeetCode](leetcode.com)
+Authors solutions of algorithmic problems powered by [LeetCode](https://leetcode.com)
 
