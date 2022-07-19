@@ -27,7 +27,7 @@ func TestIsPalindrome(t *testing.T) {
 		num := num
 		result := result
 
-		t.Run(fmt.Sprintf("%v: %v", num, result), func(t *testing.T) {
+		t.Run(fmt.Sprintf("%v:%v", num, result), func(t *testing.T) {
 			palindrome := IsPalindrome(num)
 			require.Equal(t, result, palindrome)
 		})
