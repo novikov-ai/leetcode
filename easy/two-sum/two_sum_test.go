@@ -23,6 +23,9 @@ func TestTwoSum(t *testing.T) {
 		t.Run(fmt.Sprintf("input: %v | result: %v", test.input, test.pairIndexes), func(t *testing.T) {
 			result := TwoSum(test.input, test.target)
 			require.Equal(t, test.pairIndexes, result)
+
+			resultSlow := TwoSumSlow(test.input, test.target)
+			require.Equal(t, test.pairIndexes, resultSlow)
 		})
 	}
 }
