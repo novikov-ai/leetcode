@@ -1,5 +1,9 @@
 package roman_to_integer
 
+/*
+runtime: 7 ms
+memory: 3.8 MB
+*/
 func RomanToInt(s string) int {
 
 	romanNums := map[string]int{
