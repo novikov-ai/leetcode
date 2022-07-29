@@ -47,6 +47,20 @@ func getLinkedList(numbers ...int) *ListNode {
 	return &root
 }
 
+func (n *ListNode) AddNode(value int) {
+	tail := &n
+
+	for {
+		if (*tail).Next == nil {
+			break
+		}
+		tail = &(*tail).Next
+	}
+
+	newNode := ListNode{Val: value}
+	(*tail).Next = &newNode
+}
+
 func unwrapLinkedList(node *ListNode) []int {
 	result := make([]int, 0)
 

@@ -9,20 +9,6 @@ type ListNode struct {
 	Next *ListNode
 }
 
-func (n *ListNode) AddNode(value int) {
-	tail := &n
-
-	for {
-		if (*tail).Next == nil {
-			break
-		}
-		tail = &(*tail).Next
-	}
-
-	newNode := ListNode{Val: value}
-	(*tail).Next = &newNode
-}
-
 func AddTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 	var rootSum, prevNode *ListNode
 
