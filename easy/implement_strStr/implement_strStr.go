@@ -26,3 +26,17 @@ func StrStr(haystack string, needle string) int {
 
 	return -1
 }
+
+/*
+runtime: 4 ms
+memory: 1.9 MB
+*/
+func StrStrSlidingWindow(haystack string, needle string) int {
+	for i := 0; i <= len(haystack)-len(needle); i++ {
+		if haystack[i:i+len(needle)] == needle {
+			return i
+		}
+	}
+
+	return -1
+}

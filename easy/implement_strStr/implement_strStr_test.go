@@ -12,6 +12,7 @@ func TestStrStr(t *testing.T) {
 		needle   string
 		result   int
 	}{
+		{haystack: "a", needle: "a", result: 0},
 		{haystack: "hello", needle: "ll", result: 2},
 		{haystack: "aaaa", needle: "ba", result: -1},
 		{haystack: "asdasddsa", needle: "", result: 0},
@@ -24,6 +25,9 @@ func TestStrStr(t *testing.T) {
 		t.Run(fmt.Sprintf("haystack: %v | needle: %v | result: %v", test.haystack, test.needle, test.result), func(t *testing.T) {
 			actual := StrStr(test.haystack, test.needle)
 			require.Equal(t, test.result, actual)
+
+			actualSlidingWindow := StrStrSlidingWindow(test.haystack, test.needle)
+			require.Equal(t, test.result, actualSlidingWindow)
 		})
 	}
 }
