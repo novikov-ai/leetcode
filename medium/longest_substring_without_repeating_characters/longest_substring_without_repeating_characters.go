@@ -4,6 +4,7 @@ package longest_substring_without_repeating_characters
 runtime: 27 ms
 memory: 4.6 MB
 */
+
 func LengthOfLongestSubstring(s string) int {
 	uniqueLen := 0
 	sub := make([]string, 0, len(s))

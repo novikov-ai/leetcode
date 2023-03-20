@@ -4,6 +4,7 @@ package length_of_last_word
 runtime: 0 ms
 memory: 6.5 MB
 */
+
 func LengthOfLastWord(s string) int {
 	words := make([]string, 0, len(s))
 	word := ""

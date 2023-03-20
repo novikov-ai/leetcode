@@ -4,6 +4,7 @@ package two_sum
 runtime: 0 ms
 memory: 2.4 MB
 */
+
 func LongestCommonPrefix(strs []string) string {
 
 	commonPrefix := strs[0]

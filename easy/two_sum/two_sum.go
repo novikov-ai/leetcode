@@ -4,6 +4,7 @@ package two_sum
 runtime: 9 ms
 memory: 5.6 MB
 */
+
 func TwoSum(nums []int, target int) []int {
 	numbers := make(map[int]int)
 

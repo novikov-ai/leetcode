@@ -4,6 +4,7 @@ package add_two_numbers
 runtime: 22 ms
 memory: 4.7 MB
 */
+
 type ListNode struct {
 	Val  int
 	Next *ListNode

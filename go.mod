@@ -1,4 +1,4 @@
-module medium
+module easy
 
 go 1.18
 

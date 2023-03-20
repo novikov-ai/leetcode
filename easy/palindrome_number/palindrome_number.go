@@ -4,6 +4,7 @@ package palindrome_number
 runtime: 28 ms
 memory: 4.6 MB
 */
+
 func IsPalindrome(x int) bool {
 	tempX, reversedX := x, 0
 

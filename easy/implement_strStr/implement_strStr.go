@@ -4,6 +4,7 @@ package implement_strStr
 runtime: 3 ms
 memory: 2 MB
 */
+
 func StrStr(haystack string, needle string) int {
 	if len(needle) == 0 {
 		return 0

@@ -4,6 +4,7 @@ package merge_two_sorted_lists
 runtime: 2 ms
 memory: 2.7 MB
 */
+
 type ListNode struct {
 	Val  int
 	Next *ListNode
