@@ -16,16 +16,20 @@ O(1) -> due to absence of any variables
 
 # Code
 ```
-func trimMean(arr []int) float64 {
-    sort.Ints(arr)
-
-    w := int(0.05 * float64(len(arr)))
-
-    sum := 0.00
-    for i := w; i < len(arr) - w; i++{
-        sum += float64(arr[i])
+func isCircularSentence(sentence string) bool {
+    if sentence[0] != sentence[len(sentence) - 1]{
+        return false
     }
-    
-    return sum / float64(len(arr) - w * 2)
+
+    for i := 0; i < len(sentence); i++{
+       if string(sentence[i]) != " "{
+           continue
+       }
+
+       if sentence[i-1] != sentence[i+1]{
+           return false
+       }
+    }
+    return true
 }
 ```
