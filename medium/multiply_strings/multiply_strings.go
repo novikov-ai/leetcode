@@ -50,6 +50,6 @@ func getNumber(n string) int {
 	case "9":
 		return 9
 	default:
-		return -1 // 123
+		return -1
 	}
 }
