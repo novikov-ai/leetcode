@@ -14,10 +14,16 @@ func Test_multiply(t *testing.T) {
 		result string
 	}{
 		{
-			name:   "ok",
+			name:   "one number",
 			num1:   "2",
 			num2:   "3",
 			result: "6",
+		},
+		{
+			name:   "zero",
+			num1:   "0",
+			num2:   "3",
+			result: "0",
 		},
 	}
 
