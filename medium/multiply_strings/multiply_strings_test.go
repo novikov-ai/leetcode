@@ -37,6 +37,12 @@ func Test_multiply(t *testing.T) {
 			num2:   "2",
 			result: "246",
 		},
+		{
+			name:   "long num1 and num2",
+			num1:   "123",
+			num2:   "3000",
+			result: "369000",
+		},
 	}
 
 	for _, tc := range tests {
