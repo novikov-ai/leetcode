@@ -10,7 +10,24 @@ func multiply(num1 string, num2 string) string {
 	return fmt.Sprintf("%v", result)
 }
 
+func getNumbers(nn string) int {
+	result := 0
+	t := 1
+
+	for i := len(nn) - 1; i >= 0; i-- {
+		number := getNumber(string(nn[i]))
+		result += number * t
+		t *= 10
+	}
+
+	return result
+}
+
 func getNumber(n string) int {
+	if len(n) > 1 {
+		return getNumbers(n)
+	}
+
 	switch n {
 	case "0":
 		return 0
@@ -33,6 +50,6 @@ func getNumber(n string) int {
 	case "9":
 		return 9
 	default:
-		return -1
+		return -1 // 123
 	}
 }
